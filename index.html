@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="/src/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app"
+    class="bg-pink-200 grid grid-cols-[1fr_1fr] grid-rows-1 justify-center h-[100vh] ml-auto mr-auto max-w-screen-lg">
+    <div id="input_wrapper" class="col-start-1 m-auto flex flex-col items-center">
+      <h1 class="font-bold text-lg">Handleliste</h1>
+      <input type="text" id="input" maxlength="15" placeholder="Write the name of an item">
+      <button id="submit">Add Item</button>
+    </div>
+    <div id="list" class="flex flex-col justify-center items-center gap-2">
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
