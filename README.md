@@ -139,7 +139,7 @@ Distributed under the no License.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@msaugdal](https://twitter.com/msaugdal) - mathias.s.augdal@gmail.com
+Mathias S Augdal - [@msaugdal](https://twitter.com/msaugdal) - mathias.s.augdal@gmail.com
 
 Project Link: [https://github.com/MSAugdal/jsBasicsHandleliste](https://github.com/MSAugdal/jsBasicsHandleliste)
 
