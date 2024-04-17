@@ -33,7 +33,7 @@
 <h3 align="center">JS Basics Handleliste</h3>
 
   <p align="center">
-    project_description
+    Worlds most catching handleliste
     <br />
     <a href="https://github.com/MSAugdal/jsBasicsHandleliste"><strong>Explore the docs »</strong></a>
     <br />
