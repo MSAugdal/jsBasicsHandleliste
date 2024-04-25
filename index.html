@@ -9,23 +9,21 @@
 </head>
 
 <body>
-  <div id="app" class="bg-pink-200 grid grid-cols-[1fr_1fr] grid-rows-1 justify-center h-[100vh] opacity-90">
-    <div id="input_wrapper" class="col-start-1 m-auto flex flex-col items-center gap-3">
-      <h1 class="font-bold text-lg">Handleliste</h1>
-      <input type="text" id="input" maxlength="15" minlength="1" placeholder="Write the name of an item"
-        class="pl-9 pr-9 pb-3 pt-3 rounded">
-      <button id="submit"
-        class="rounded bg-white pl-9 pr-9 pt-2 pb-2 shadow  hover:shadow-md hover:scale-105 border-2 hover:border-2 hover:border-pink-400">Add
-        Item</button>
+  <div id="app"
+    class="bg-gray-400 grid grid-cols-[1fr_1fr] grid-rows-1 justify-center items-center h-[100vh] opacity-90 mx-auto">
+
+    <div class="flex flex-col gap-2 mx-auto">
+      <input id="input" type="text" maxlength="20" class="p-2 rounded">
+      <button id="button"
+        class="bg-white rounded p-2 hover:scale-105 hover:transition transition hover:bg-pink-400">Submit</button>
     </div>
-    <div id="list" class="flex flex-col justify-center items-center gap-2">
-    </div>
+
+    <ul id="list" class="mx-auto flex flex-col gap-2">
+    </ul>
+
   </div>
+
   <script type="module" src="src/main.js"></script>
-  <iframe src="https://www.youtube.com/embed/eRXE8Aebp7s?si=6y2nmT0xtUnKjRw3&amp;controls=0&autoplay=1"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 
 </html>
