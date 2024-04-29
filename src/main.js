@@ -54,16 +54,16 @@ function addListItemToDOM(item) {
 function createButton() {
   const _button = document.createElement("button");
   _button.addEventListener("click", onRemoveButtonClick);
-  _button.classList += "bg-white text-black text-sm ml-1 px-1 rounded";
+  _button.classList += "bg-black text-white text-sm ml-1 px-4 py-2 rounded transition hover:transition hover:bg-pink-400";
   _button.innerText = "Remove";
   return _button;
 }
 
 function createListItem(itemName) {
   const item = document.createElement("li");
-  item.classList += "bg-gray-900 flex gap-4 text-white text-lg px-6 py-2 rounded";
+  item.classList += "bg-white flex gap-4 text-black justify-center items-center text-lg px-8 py-3 rounded";
   item.id = itemName;
-  item.innerText = itemName;
+  item.innerHTML = `<p class="text-xl text-left">${itemName}</p>`;
   item.append(createButton());
 
   return item;

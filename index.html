@@ -9,18 +9,20 @@
 </head>
 
 <body>
-  <div id="app"
-    class="bg-gray-400 grid grid-cols-[1fr_1fr] grid-rows-1 justify-center items-center h-[100vh] opacity-90 mx-auto">
+  <div id="app" class="bg-black grid grid-cols-[1fr] grid-rows-1 justify-center items-center h-[100vh] opacity-90">
+    <div class="flex mx-auto gap-24 justify-center items-center">
+      <div class="flex flex-col gap-2 mx-auto">
+        <h1 class="text-3xl pb-2 text-white ">Add To Handleliste</h1>
+        <input id="input" type="text" maxlength="20" class="p-2 rounded">
+        <button id="button"
+          class="bg-pink-400 rounded p-2 hover:scale-105 hover:transition transition hover:bg-pink-400">Submit</button>
+      </div>
 
-    <div class="flex flex-col gap-2 mx-auto">
-      <input id="input" type="text" maxlength="20" class="p-2 rounded">
-      <button id="button"
-        class="bg-white rounded p-2 hover:scale-105 hover:transition transition hover:bg-pink-400">Submit</button>
+      <ul id="list" class="mx-auto flex flex-col gap-2">
+        <p class="text-white text-3xl">Items To Buy</p>
+      </ul>
+
     </div>
-
-    <ul id="list" class="mx-auto flex flex-col gap-2">
-    </ul>
-
   </div>
 
   <script type="module" src="src/main.js"></script>
