@@ -6,6 +6,10 @@ function onSubmitButtonClick() {
   const newItem = input.value.trim();
   const items = getListItemsFromStorage();
 
+  if (newItem == '') {
+    alert("write something!");
+    return;
+  }
   if (items.includes(newItem)) {
     alert("Item already exists!");
     return;
@@ -42,7 +46,6 @@ function removeItemFromStorage(item) {
   localStorage.setItem("items", JSON.stringify(items));
 }
 
-
 function addListItemToDOM(item) {
   const newItem = createListItem(item);
   list.appendChild(newItem);
@@ -65,7 +68,6 @@ function createListItem(itemName) {
 
   return item;
 }
-
 
 function initialize() {
   button.addEventListener("click", onSubmitButtonClick);
